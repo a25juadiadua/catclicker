@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatClicker</title>
+</head>
+
+<body>
+    
+    <img src="/img/unnamed.jpg" id="CatClicker" alt="foto de gato" width="300" height="300">
+
+    <p id="contador"> 0 </p>
+</body>
+
+
+<script>
+    let img = document.getElementById("CatClicker");
+    let contador = 0;
+
+    img.addEventListener("click",function(){
+        contador++;
+        document.getElementById("contador").innerHTML = contador;
+    })
+
+    
+</script>
+</html>
