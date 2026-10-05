@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatClicker</title>
+</head>
+
+<body>
+    
+    <img src="/img/unnamed.jpg" id="CatClicker" alt="foto de gato" width="300" height="300">
+
+    <p id="contador"> 0 </p>
+
+    <img src="/img/unnamed2.jpg" id="CatClicker1" alt="foto de gato" width="300" height="300">
+
+    <p id="contador1"> 0 </p>
+
+
+</body>
+
+
+<script>
+    let img = document.getElementById("CatClicker");
+    let contador = 0;
+
+    img.addEventListener("click",function(){
+        contador++;
+        document.getElementById("contador").innerHTML = contador;
+    })
+
+    let img1 = document.getElementById("CatClicker1");
+    let contador1 = 0;
+
+    img1.addEventListener("click",function(){
+        contador1++;
+        document.getElementById("contador1").innerHTML = contador1;
+    })
+
+    
+</script>
+</html>
